@@ -2,7 +2,7 @@ Status = "";
 img = "";
 
 function setup(){
-    canvas = createCanvas(640,330);
+    canvas = createCanvas(640,380);
     canvas.center();
     objectdetector = ml5.objectDetector("cocossd",modelloaded);
     document.getElementById("status").innerHTML = "Status:Detecting object  " + "<span class='glyphicon glyphicon-cog'></span>"
@@ -27,5 +27,5 @@ function gotresults(error,results){
 }
 
 function draw(){
-   image(img,0,0,640,330);
+   image(img,0,60,640,380);
 }
